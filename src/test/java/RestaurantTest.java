@@ -84,6 +84,9 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
 
-
+    @Test
+    public void Total_cost_of_selected_items_addition_of_prices(){
+        assertEquals(119+269, restaurant.Total_cost_of_selected_items_addition_of_prices("Sweet corn soup", "Vegetable lasagne"));
+    }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
