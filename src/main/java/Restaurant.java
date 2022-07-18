@@ -64,6 +64,12 @@ public class Restaurant {
         return name;
     }
 
+    public int Total_cost_of_selected_items_addition_of_prices(String... itemsSelected){
+        long total = 0;
+        for(String ItemName : itemsSelected) {
+            total += findItemByName(ItemName).getPrice();
+        }
+        return total;
+    }
 
-
- }
+}
